@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VHTM</title>
+</head>
+<body>
+<script>
+   function checkEmail(str) {
+       let regexp = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+       return regexp.test(str);
+   }
+    let str = prompt("Input Email");
+   let result = checkEmail(str);
+    if(result===true){alert("Email Invalid")
+    }else {alert("Email UnInvalid")}
+</script>
+</body>
+</html>
